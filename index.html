@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Frijole|Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript/game.js"></script>
+</head>
+<body>
+    <div class="page-header pg-title">
+        <h1 class="ttl"><span class="glyphicon glyphicon-hourglass"></span> TRIVIA GAME <span class="glyphicon glyphicon-hourglass"></span></h1>
+    </div>
+
+    <div class="container">
+        <div class="row" id="ques_div">
+            <div class="col-md-10 col-md-offset-1">
+                <center>
+                    <div class="jumbotron timer-class" style="padding: 0px;">
+                        <h2> Time left: </h2>
+                        <label id="rem-time"></label>
+                    </div>
+                </center>
+
+                <div class="jumbotron jumbo-ques">
+                    <p> The Roman numeral "L" stands for what number?</p>
+                    <input type="radio" name="Q1" value="op1_1"> 25
+                    <input type="radio" name="Q1" value="op1_2" class="radio-style"> 70
+                    <input type="radio" name="Q1" value="op1_3" class="radio-style"> 50
+                    <input type="radio" name="Q1" value="op1_4" class="radio-style"> 10
+                </div>
+
+                <div class="jumbotron jumbo-ques">
+                    <p> Which is the most abundant metal in the earth's crust?</p>
+                    <input type="radio" name="Q2" value="op2_1"> Platinum
+                    <input type="radio" name="Q2" value="op2_2" class="radio-style"> Cadmium
+                    <input type="radio" name="Q2" value="op2_3" class="radio-style"> Gold
+                    <input type="radio" name="Q2" value="op2_4" class="radio-style"> Aluminium
+                </div>
+
+                <div class="jumbotron jumbo-ques">
+                    <p> In what country would you find the Yellow River?</p>
+                    <input type="radio" name="Q3" value="op3_1"> China
+                    <input type="radio" name="Q3" value="op3_2" class="radio-style"> India
+                    <input type="radio" name="Q3" value="op3_3" class="radio-style"> Argentina
+                    <input type="radio" name="Q3" value="op3_4" class="radio-style"> Mexico
+                </div>
+
+                <div class="jumbotron jumbo-ques">
+                    <p> Who was the male lead in the 1996 summer blockbuster Independence Day?</p>
+                    <input type="radio" name="Q4" value="op4_1"> Colin Firth
+                    <input type="radio" name="Q4" value="op4_2" class="radio-style"> Mark Wahlberg
+                    <input type="radio" name="Q4" value="op4_3" class="radio-style"> Will Smith
+                    <input type="radio" name="Q4" value="op4_4" class="radio-style"> Joel Edgerton
+                </div>
+
+                <div class="jumbotron jumbo-ques">
+                    <p> In which country would one find 8 of the world's 10 highest mountains?</p>
+                    <input type="radio" name="Q5" value="op5_1"> Afghanistan
+                    <input type="radio" name="Q5" value="op5_2" class="radio-style"> Nepal
+                    <input type="radio" name="Q5" value="op5_3" class="radio-style"> United Kingdom
+                    <input type="radio" name="Q5" value="op5_4" class="radio-style"> Zimbabwe
+                </div>
+
+                <div class="jumbotron jumbo-ques">
+                    <p> What is the most popular drink in the world that does not contain Alcohol?</p>
+                    <input type="radio" name="Q6" value="op6_1"> Coca-cola
+                    <input type="radio" name="Q6" value="op6_2" class="radio-style"> Margarita Mocktail
+                    <input type="radio" name="Q6" value="op6_3" class="radio-style"> Coffee
+                    <input type="radio" name="Q6" value="op6_4" class="radio-style"> Gatorade
+                </div>
+            </div>
+
+
+            <div class="row btn-row">
+                <input type="submit" value="Click To Start" id="game-start" class="btn btn-primary btn-start" />
+
+                <input type="submit" value="Done" id="game-done" class="btn btn-primary btn-start" />
+            </div>
+
+        </div>
+
+        <div class="row" id="res_div">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="page-header score-title">
+                    <h3><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp; Your Score &nbsp;&nbsp; <span class="glyphicon glyphicon-gift"></span></h3>
+                    <p><strong> Right Answer: </strong></p><strong><label id="r-ans"></label></strong><br />
+                    <p><strong> Wrong Answer: </strong></p><strong><label id="w-ans"></label></strong><br />
+                    <p><strong> Unanswer: </strong></p><strong><label id="u-ans"></label></strong><br />
+
+                    <input type="submit" value="New Game" id="new-game" class="btn btn-primary btn-new" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
